@@ -1,0 +1,103 @@
+:root {
+    --color-principal-naranja: #f76a11;
+}
+
+@font-face {
+    font-family: TT Norms;
+    src: url("font/TTNorms-Bold.otf")
+}
+
+body {
+    font-family: 'TT Norms';
+}
+
+.container {}
+
+/* header*/
+header {
+    height: 213px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-rows: 155px 55px;
+
+}
+
+.header-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 140px
+}
+
+.header-logo-left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-logo-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    font-size: 16.66px;
+    font-weight: bold;
+    color: #616e7d;
+}
+
+.header-text-vertical {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-principal-naranja);
+
+}
+
+.header-text-vertical span {
+    text-align: center;
+}
+
+.header-activate {
+    color: white;
+    height: 155px;
+    background: var(--color-principal-naranja);
+    border-radius: 0 0 20% 20%;
+}
+
+.header-nav {
+    border-top: 1px solid #616e7d;
+    margin: 0px 140px;
+    margin-top: -8px;
+    opacity: 15%;
+
+}
+
+nav {
+    font-weight: bold;
+    font-size: 14.55px;
+    padding: 11px 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+
+}
+
+li a {
+    padding: 0px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1111114d;
+}
