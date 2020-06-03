@@ -4,14 +4,24 @@
 
 @font-face {
     font-family: TT Norms;
-    src: url("font/TTNorms-Bold.otf")
+    src: url("font/TTNorms-Bold.otf");
+    font-family: TT Regular;
+    src: url("font/TTNorms-Regular.otf");
+    font-family: TT Light;
+    src: url("font/TTNorms-Light.otf");
+    font-family: TT Norms Regular;
+    src: url("font/TT Norms Pro Regular.otf");
+
 }
 
 body {
     font-family: 'TT Norms';
+    margin: 0px 0px;
 }
 
-.container {}
+.container {
+    max-width: 1280px;
+}
 
 /* header*/
 header {
@@ -68,16 +78,17 @@ header {
 
 .header-nav {
     border-top: 1px solid #616e7d;
-    margin: 0px 140px;
+   
     margin-top: -8px;
     opacity: 15%;
 
 }
 
 nav {
+    margin: 0px 140px;
     font-weight: bold;
     font-size: 14.55px;
-    padding: 11px 0px;
+    padding: 20px 0px;
 }
 
 ul {
@@ -89,6 +100,7 @@ ul {
 
 li {
     display: inline;
+    color: #616e7d;
 
 }
 
@@ -96,8 +108,387 @@ li a {
     padding: 0px 10px;
     text-align: center;
     text-decoration: none;
+    color: #616e7d;
 }
 
 li a:hover {
     background-color: #1111114d;
+}
+
+/*fin header*/
+
+/*section 1*/
+h1 {
+    color: #1a8ee4;
+    font-size: 42px;
+
+}
+
+.section-1 {
+
+    background: #f1f4f6;
+    text-transform: uppercase;
+    height: 460px;
+    max-width: 1280px;
+    background-image: url(../img/doctablet.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+   
+   
+    
+
+ 
+}
+
+.section-1-container {
+    display: grid;
+    max-width: 640px;
+    grid-template-rows: 200px 520px;
+    justify-content: center;
+    
+    padding: 0px 10px;
+
+}
+
+.section-1-container-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1-container-title-container {
+    display: flex;
+    align-items: top;
+    justify-content: top;
+}
+
+.section-1-form {
+   
+
+
+}
+
+.section-1-form-container {
+    
+    height: 70px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.section-1-form span {
+    color: #1a8ee4;
+    font-weight: normal;
+    font-size: 14px;
+
+
+}
+
+.section-1-form-1-text {}
+
+.section-1-form-border {
+    height: 40px;
+    border: 1px solid #c6cbd1;
+    border-radius: 12px;
+    background: white;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-form-border2 {
+    height: 40px;
+    border: 1px solid #c6cbd1;
+    border-radius: 12px;
+    background: white;
+    display: grid;
+    grid-template-columns: 40px 1fr 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-input-text {
+    border: none;
+    font-size: 16px;
+}
+
+.buscar-fondo {
+    background: var(--color-principal-naranja);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0px 4px;
+    padding: 4px 4px;
+}
+
+.form-input-text:hover {
+    border: none;
+    outline: none;
+}
+
+.section-1-form-border img {
+    margin-left: 10px;
+}
+
+.section-1-form-border2 img {
+    margin-left: 5px;
+}
+
+.section-1-form-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/*fin section 1*/
+/* section 2*/
+.section-2 {
+
+    height: 575px;
+    background: var(--color-principal-naranja);
+    display: grid;
+    grid-template-rows: 150px 1fr;
+   
+}
+
+.section-2-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-container {
+    margin: 0px 50px;
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+}
+
+.section-2-container-arrow {
+    position: absolute;
+    margin-top: -110px;
+}
+
+/* card de doctores*/
+.section-2-container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+
+.card {
+    max-width: 220px;
+    max-height: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-bottom {
+    margin: 0px 12px;
+    display: grid;
+    grid-template-rows: 60px 60px;
+    gap: 10px;
+}
+
+.card-doc-nombre {
+    text-align: center;
+    font-size: 27px;
+}
+
+.card-bottom-centrar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-doc-titulo {
+    text-transform: uppercase;
+    display: flex;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* fin de card de doctores*/
+
+/* fin section 2*/
+
+/*section 3 */
+.section-3 {
+    height: 410px;
+    background: #198de7;
+    display: grid;
+    font-family: sans-serif;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+
+}
+
+.section-3-left {
+    margin-left: 100px;
+
+}
+
+.section-3-left-cont {
+
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -30px;
+    background: #198de7;
+    height: 465px;
+    width: 490px;
+
+}
+
+.section-3-left-img {
+    position: absolute;
+
+    margin-top: 10px;
+    padding-right: 60px;
+    z-index: 3;
+
+}
+.section-3-right{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+}
+.section-3-left-img1 {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 350px;
+    z-index: 2;
+
+
+}
+
+.section-3-right-top {
+    font-size: 22px;
+    color: white;
+}
+
+.section-3-right-bottom {
+  
+    font-size: 18px;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.section-3-right-bottom-title{
+    font-size: 24px;
+    font-family: 'TT Norms';
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.section-3-right-bottom-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    align-items: center;
+justify-content: center;
+    column-gap: 20px;
+}
+.section-3-btn{
+    color: #198de7;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-3-btn img{
+padding: 0px 6px 0px 0px;
+}
+/*fin section 3*/
+/*footer*/
+
+footer{
+
+    margin-top: 24px;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: 280px minmax(600px,calc(1280px - 440px)) 160px ;
+    margin-bottom: 80px;
+    margin:40px 140px;
+ 
+}
+.footer-info{
+    display: grid;
+    grid-template-rows: 1fr 40px 40px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.footer-text{
+    color: #616e7d;
+    font-size: 10px;
+}
+.footer-text2{
+    color: #616e7d;
+    font-size: 16px;
+    display: flex;
+  justify-content: flex-start;
+    align-items: center;
+
+}
+.footer-text2 img{
+    margin-left: 20px;
+}
+
+.footer-contact{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    color: #616e7d;
+}
+.footer-contact-text{
+  font-family: 'TT Norms Regular';
+  font-style: normal;
+  font-size: 22.45px;
+    color: #1a8ee4;
+}
+.footer-contact div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.footer-contact img{
+    padding-right: 10px;
+}
+/*fon footer*/
+/* querys */
+@media (min-width:1366px) {
+    body {
+        margin: 0px 10%;
+    }
+
 }
