@@ -17,6 +17,9 @@
 body {
     font-family: 'TT Norms';
     margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
